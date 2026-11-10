@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險金課稅實務解析：遺產稅 vs 最低稅負制</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { font-size: 20px; }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif; 
+            line-height: 1.6;
+            background-color: #f4f7f6;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 5px solid #0056b3;
+        }
+        .highlight-box {
+            background-color: #e9ecef;
+            border-left: 4px solid #6c757d;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-10">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 border-b-2 border-slate-200 pb-6 text-center">
+            <h1 class="text-4xl font-bold text-slate-800 mb-3">保險金課稅實務解析</h1>
+            <p class="text-slate-600 text-2xl">遺產稅與最低稅負制之關鍵差異</p>
+        </header>
+
+        <!-- Slide 1: 課稅對象與本質差異 -->
+        <div class="card">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 border-b pb-2">一、 課稅對象與本質差異</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">🏛️ 遺產稅 (Estate Tax)</h3>
+                    <p class="font-bold mb-2 text-slate-700">課稅對象：被繼承人 (死者)</p>
+                    <p>針對死者留下的「整體財產」課稅。在保險實務上，重點在於判斷這筆保險金「是否屬於死者的遺產」。</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li><strong>免稅條件：</strong>指定受益人之人壽保險身故給付。</li>
+                        <li><strong>全額免稅：</strong>只要符合條件，金額無上限，全數不計入遺產。</li>
+                        <li><strong>地雷：</strong>實質課稅原則(重病、高齡等)、未指定受益人、要/被保險人不同。</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-3">💰 最低稅負制 (AMT)</h3>
+                    <p class="font-bold mb-2 text-slate-700">課稅對象：受益人 (活著領錢的人)</p>
+                    <p>屬於「綜合所得稅」的一環。當受益人領到免課遺產稅的保險金時，國稅局要檢視這筆「大額收入」是否需要繳納所得稅。</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li><strong>課稅門檻：</strong>每一申報戶全年有 3,740 萬免稅額。</li>
+                        <li><strong>適用範圍：</strong>要/被保險人不同且於民國95年後投保的人壽及年金險身故給付。</li>
+                        <li><strong>稅率：</strong>超過免稅額部分，與其他基本所得額合併後，扣除 750 萬再乘上 20%。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: 實務規劃順序與盲點 -->
+        <div class="card">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 border-b pb-2">二、 實務規劃順序與盲點</h2>
+            
+            <div class="highlight-box">
+                <p class="font-bold text-slate-700 text-xl mb-2">💡 規劃鐵律：先過遺產稅，再看最低稅負制</p>
+                <p>一筆保險金不可能同時被課「遺產稅」又被課「所得稅（最低稅負）」。</p>
+            </div>
+
+            <ul class="list-disc pl-6 space-y-4 text-xl mt-4">
+                <li><strong>第一關 (遺產稅)：</strong>如果保單被國稅局依「實質課稅原則」打回遺產，這筆錢就會直接跟其他遺產合併計算，最高面臨 20% 的遺產稅。<span class="text-red-600 font-bold">此時，不會再計算最低稅負制。</span></li>
+                <li><strong>第二關 (最低稅負制)：</strong>如果保單成功通過第一關，順利免計入遺產。此時這筆錢會跑到受益人的所得中，才需要檢視是否超過 3,740 萬的免稅額。<span class="text-blue-600 font-bold">這才是我們常說的「保險金免稅額」。</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

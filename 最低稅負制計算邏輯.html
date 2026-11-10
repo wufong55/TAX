@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最低稅負制實務解析：免稅額雙重防線</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { font-size: 20px; }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif; 
+            line-height: 1.6;
+            background-color: #f4f7f6;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 5px solid #0056b3;
+        }
+        .highlight-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .math-box {
+            background-color: #e9ecef;
+            border-left: 4px solid #6c757d;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-10">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 border-b-2 border-slate-200 pb-6 text-center">
+            <h1 class="text-4xl font-bold text-slate-800 mb-3">最低稅負制計算邏輯解密</h1>
+            <p class="text-slate-600 text-2xl">破解「死亡保險免稅額」與「綜合免稅額」的雙重機制</p>
+        </header>
+
+        <!-- Slide 1: 兩個獨立的免稅扣除額 -->
+        <div class="card">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 border-b pb-2">一、 雙重免稅機制：它們不是同一個額度！</h2>
+            <p class="mb-4">在計算「最低稅負制（基本稅額）」時，其實存在著兩道截然不同的免稅防線，許多人會把這兩者混為一談：</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">第一道防線：特定項目的「死亡保險金免稅額」</h3>
+                    <p class="font-bold mb-2 text-slate-700 text-xl">額度：3,740 萬（113年標準）</p>
+                    <p><strong>專屬用途：</strong>只針對「人壽保險及年金保險的『死亡給付』」。</p>
+                    <p class="mt-2 text-slate-600">這是用來過濾高額身故理賠金的第一關。只有超過 3,740 萬的部分，才會被視為您的「基本所得」。</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-3">第二道防線：整體結算的「綜合免稅扣除額」</h3>
+                    <p class="font-bold mb-2 text-slate-700 text-xl">額度：750 萬（113年標準）</p>
+                    <p><strong>廣泛用途：</strong>涵蓋「所有」被計入基本所得額的項目。</p>
+                    <p class="mt-2 text-slate-600">這 750 萬是用在「最後總結算」時。不管您的基本所得是來自海外所得、特定保險給付餘額，還是未上市櫃股票交易所得，全部加總後，都可以再扣除這 750 萬。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: 實務計算公式拆解 -->
+        <div class="card">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 border-b pb-2">二、 實務計算公式拆解</h2>
+            
+            <p class="mb-4 text-xl">所以，「750 萬的綜合免稅扣除額」確實包含「特定保險給付（身故保險金）」，但它的算法是<strong>先扣完 3,740 萬後，剩下的金額才能拿去跟 750 萬比！</strong></p>
+
+            <div class="math-box">
+                <p><strong>第一步 (計入所得)：</strong> 特定保險給付 = 身故保險金總額 - <span class="text-blue-600 font-bold">3,740萬 (第一道防線)</span></p>
+                <p class="my-2"><strong>第二步 (彙整加總)：</strong> 基本所得額 = 特定保險給付 + 海外所得 + 私募基金受益憑證交易所得 + ...</p>
+                <p><strong>第三步 (最終課稅)：</strong> 基本稅額 = (基本所得額 - <span class="text-amber-600 font-bold">750萬 (第二道防線)</span>) × 20%</p>
+            </div>
+
+            <div class="highlight-box mt-6">
+                <p class="font-bold text-slate-700 text-xl mb-2">💡 實戰結論：保險金的真實免稅天花板是多少？</p>
+                <p>如果客戶「沒有」海外所得或其他應計入最低稅負的項目，他單純透過保單能享受的免稅總額，其實是：<br>
+                <span class="text-2xl font-bold text-red-600 mt-2 inline-block">3,740 萬 + 750 萬 = 4,490 萬元</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

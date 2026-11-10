@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險金傳承與稅法/民法總整理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { font-size: 20px; }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif; 
+            line-height: 1.6;
+            background-color: #f4f7f6;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 5px solid #0056b3;
+        }
+        .law-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .tag-civil { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        .tag-tax { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .tag-income { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .grid-container { grid-template-columns: 1fr 1fr; }
+        }
+        .box-title { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-10">
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-10 border-b-2 border-slate-200 pb-6 text-center">
+            <h1 class="text-4xl font-bold text-slate-800 mb-3">身故保險金的法理攻防總整理</h1>
+            <p class="text-slate-600 text-2xl">民法、保險法、稅法、所得稅法四大法源解析</p>
+        </header>
+
+        <!-- Slide 1: 民事篇 (家屬爭產與特留分) -->
+        <div class="card">
+            <div class="law-tag tag-civil">⚖️ 保險法 & 民法 (遺產分割與特留分)</div>
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">民事防護網：指定受益人的絕對隔離</h2>
+            <p class="mb-4 text-slate-600">解決家屬間的爭產、討債與特留分爭議。</p>
+            
+            <div class="grid-container">
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-blue-800">📌 核心法源依據</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>《保險法》第 112 條：</strong>保險金額約定於被保險人死亡時給付於其所指定之受益人者，其金額不得作為被保險人之遺產。</li>
+                        <li><strong>《保險法》第 135-3 條等：</strong>年金險、健康險、傷害險準用第 112 條。</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-green-800">✅ 實務判決結果</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>財產性質轉換：</strong>身故瞬間，保險金（或未支領年金餘額）直接成為受益人的「固有財產」。</li>
+                        <li><strong>特留分攻防：</strong>因為不是死者遺產，其他繼承人絕對「不可以」將此保險金納入特留分計算，也無法要求遺產分割或用來還債。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: 稅務篇 (遺產稅與實質課稅) -->
+        <div class="card">
+            <div class="law-tag tag-tax">💰 遺產及贈與稅法 & 納保法 (遺產稅)</div>
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">稅務第一關：國稅局的實質審查</h2>
+            <p class="mb-4 text-slate-600">針對死者留下的財產與生前移轉行為課稅（最高稅率 20%）。</p>
+            
+            <div class="grid-container">
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-blue-800">📌 核心法源與地雷</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>免稅護身符：</strong>《遺產及贈與稅法》第 16 條第 9 款明定，約定於被繼承人死亡時，給付其所指定受益人之「人壽保險金額」，不計入遺產總額。</li>
+                        <li><strong>國稅局武器：</strong>《納稅者權利保護法》第 7 條（實質課稅原則）。</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-red-800">❌ 實務破局與納入遺產</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>觸犯八大態樣：</strong>高齡、重病、躉繳、舉債等。法院會穿透免稅護身符，認定為避稅行為，將保險金打回遺產課稅。</li>
+                        <li><strong>生前債權：</strong>生前已發生的醫療理賠（未及時領取），或年金險累積期（未開始給付）返還之保價金，依法皆屬死者遺產。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: 所得稅篇 (最低稅負制) -->
+        <div class="card">
+            <div class="law-tag tag-income">📊 所得稅法 & 基本稅額條例 (最低稅負制)</div>
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">稅務第二關：受益人的所得申報</h2>
+            <p class="mb-4 text-slate-600">針對受益人（活著領錢的人）領取大額免稅資金後的總結算。</p>
+            
+            <div class="grid-container">
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-blue-800">📌 核心法源與啟動條件</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>啟動門檻：</strong>《所得基本稅額條例》第 12 條，針對「要保人與被保險人不同」且為 95 年後投保的人壽及年金險死亡給付。</li>
+                        <li><strong>雙重免稅防線：</strong>第 12 條的「死亡給付 3,740 萬免稅額」＋ 第 13 條的「綜合基本所得 750 萬扣除額」。</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="box-title text-amber-800">💡 實務計算與規劃鐵律</div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>先後順序：</strong>保單必須先「成功免計入遺產稅」，才會進入這關。若已經被實質課稅繳了遺產稅，就不會再被課最低稅負。</li>
+                        <li><strong>真實極限：</strong>單一申報戶若無其他海外所得，最高可享受 4,490 萬 (3740+750) 的免稅空間。</li>
+                        <li><strong>規劃戰術：</strong>免稅額是「按申報戶」計算，分散給成年、獨立報稅的子女是節稅關鍵。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
