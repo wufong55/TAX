@@ -3,126 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>保險金傳承與稅法/民法總整理</title>
+    <title>身故保險金的法理攻防總整理（專業精準版）</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html { font-size: 20px; }
-        body { 
-            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif; 
-            line-height: 1.6;
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.65;
             background-color: #f4f7f6;
         }
         .card {
             background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
             padding: 2rem;
             margin-bottom: 2rem;
-            border-top: 5px solid #0056b3;
+            border-top: 6px solid #0056b3;
         }
+        .card-civil { border-top-color: #0e7490; }
+        .card-tax { border-top-color: #b91c1c; }
+        .card-income { border-top-color: #b45309; }
+        .card-summary { border-top-color: #1e293b; }
+
         .law-tag {
             display: inline-block;
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.9em;
+            font-size: 0.9rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
-        .tag-civil { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
-        .tag-tax { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        .tag-income { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-        
+        .tag-civil { background-color: #ecfeff; color: #155e75; border: 1px solid #a5f3fc; }
+        .tag-tax { background-color: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+        .tag-income { background-color: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+
         .grid-container {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
-            margin-top: 1.5rem;
+            margin-top: 1.25rem;
         }
         @media (min-width: 768px) {
             .grid-container { grid-template-columns: 1fr 1fr; }
         }
-        .box-title { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        .box-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        .note-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #64748b;
+            padding: 0.85rem 1rem;
+            margin-top: 1rem;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.92rem;
+            color: #334155;
+        }
     </style>
 </head>
-<body class="text-slate-800 p-6 md:p-10">
+<body class="text-slate-800 p-5 md:p-10">
     <div class="max-w-5xl mx-auto">
         <header class="mb-10 border-b-2 border-slate-200 pb-6 text-center">
-            <h1 class="text-4xl font-bold text-slate-800 mb-3">身故保險金的法理攻防總整理</h1>
-            <p class="text-slate-600 text-2xl">民法、保險法、稅法、所得稅法四大法源解析</p>
+            <h1 class="text-4xl font-bold text-slate-900 mb-3">身故保險金的法理攻防總整理</h1>
+            <p class="text-slate-600 text-xl md:text-2xl">民法、保險法、遺產及贈與稅法、所得基本稅額條例 四大法源解析</p>
         </header>
 
-        <!-- Slide 1: 民事篇 (家屬爭產與特留分) -->
-        <div class="card">
-            <div class="law-tag tag-civil">⚖️ 保險法 & 民法 (遺產分割與特留分)</div>
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">民事防護網：指定受益人的絕對隔離</h2>
-            <p class="mb-4 text-slate-600">解決家屬間的爭產、討債與特留分爭議。</p>
-            
+        <!-- Slide 1: 民事分配篇 -->
+        <section class="card card-civil">
+            <div class="law-tag tag-civil">⚖️ 保險法 &amp; 民法（遺產分割、特留分與債務防禦）</div>
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">一、民事分配篇：指定受益人的資產隔離</h2>
+            <p class="mb-4 text-slate-600">釐清身故保險金在民事繼承上的財產歸屬，解決家族爭產與債權請求爭議。</p>
+
             <div class="grid-container">
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <div class="box-title text-blue-800">📌 核心法源依據</div>
-                    <ul class="list-disc pl-5 space-y-2">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="box-title text-cyan-800">📌 核心法源依據</div>
+                    <ul class="list-disc pl-5 space-y-3">
                         <li><strong>《保險法》第 112 條：</strong>保險金額約定於被保險人死亡時給付於其所指定之受益人者，其金額不得作為被保險人之遺產。</li>
-                        <li><strong>《保險法》第 135-3 條等：</strong>年金險、健康險、傷害險準用第 112 條。</li>
+                        <li><strong>準用條款：</strong>健康險（第 130 條）、傷害險（第 135 條）及年金險（第 135 條之 3）均準用第 112 條規定。</li>
+                        <li><strong>未指定之效果（第 113 條）：</strong>若未指定受益人（或受益人先於被保險人身故未變更），該筆保險金額即作為被保險人之遺產。</li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <div class="box-title text-green-800">✅ 實務判決結果</div>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>財產性質轉換：</strong>身故瞬間，保險金（或未支領年金餘額）直接成為受益人的「固有財產」。</li>
-                        <li><strong>特留分攻防：</strong>因為不是死者遺產，其他繼承人絕對「不可以」將此保險金納入特留分計算，也無法要求遺產分割或用來還債。</li>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="box-title text-emerald-800">✅ 實務判決與效力邊界</div>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>受益人固有財產：</strong>有明確指定受益人時，身故保險金於事故發生瞬間直接歸屬受益人，原則上不列入被保險人遺產清冊。</li>
+                        <li><strong>特留分與債務防禦：</strong>依目前司法實務多數見解，該筆保險金<strong>不計入特留分</strong>計算，亦無須用以清償被保險人生前債務。</li>
+                        <li><strong>實務邊界提醒：</strong>若屬極端惡意脫產情事，債權人仍可能依《民法》第 244 條提起撤銷詐害債權訴訟；另年金險於「累積期間」身故返還之保價金，須視保單條款約定給付對象為「要保人」或「指定受益人」而定。</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Slide 2: 稅務篇 (遺產稅與實質課稅) -->
-        <div class="card">
-            <div class="law-tag tag-tax">💰 遺產及贈與稅法 & 納保法 (遺產稅)</div>
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">稅務第一關：國稅局的實質審查</h2>
-            <p class="mb-4 text-slate-600">針對死者留下的財產與生前移轉行為課稅（最高稅率 20%）。</p>
-            
+        <!-- Slide 2: 遺產稅篇 -->
+        <section class="card card-tax">
+            <div class="law-tag tag-tax">💰 遺產及贈與稅法 &amp; 納稅者權利保護法（遺產稅）</div>
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">二、遺產稅篇：稅務第一關的實質審查</h2>
+            <p class="mb-4 text-slate-600">針對被繼承人（死者）遺留之財產課稅（最高邊際稅率 20%），判斷保單是否應併入遺產總額。</p>
+
             <div class="grid-container">
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <div class="box-title text-blue-800">📌 核心法源與地雷</div>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>免稅護身符：</strong>《遺產及贈與稅法》第 16 條第 9 款明定，約定於被繼承人死亡時，給付其所指定受益人之「人壽保險金額」，不計入遺產總額。</li>
-                        <li><strong>國稅局武器：</strong>《納稅者權利保護法》第 7 條（實質課稅原則）。</li>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="box-title text-blue-900">📌 免稅法源與查核武器</div>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>免稅依據（《遺贈稅法》第 16 條第 9 款）：</strong>約定於被繼承人死亡時，給付其所指定受益人之人壽保險金額，不計入遺產總額（實務函釋亦及於傷害險與健康險之身故給付）。</li>
+                        <li><strong>查核武器（《納保法》第 7 條）：</strong>稽徵機關得依實質課稅原則，認定納稅者基於規避稅捐目的所為之交易形式，按實質經濟事實課徵遺產稅。</li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <div class="box-title text-red-800">❌ 實務破局與納入遺產</div>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>觸犯八大態樣：</strong>高齡、重病、躉繳、舉債等。法院會穿透免稅護身符，認定為避稅行為，將保險金打回遺產課稅。</li>
-                        <li><strong>生前債權：</strong>生前已發生的醫療理賠（未及時領取），或年金險累積期（未開始給付）返還之保價金，依法皆屬死者遺產。</li>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="box-title text-red-800">❌ 實務併入遺產之三大情境</div>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>租稅規避（實質課稅）：</strong>投保情境符合國稅局歸納之查核特徵（如高齡、重病、躉繳、舉債、短期投保、保費高於或相當於保額等），經綜合判定具規避遺產稅意圖者，喪失免稅資格。</li>
+                        <li><strong>要／被保險人不同：</strong>要保人與被保險人非同一人，當<strong>要保人先身故</strong>時，保單價值準備金屬要保人生前財產（《遺贈稅法》第 4 條），依法計入遺產。</li>
+                        <li><strong>生前債權與財產返還：</strong>生前已發生但未及領取之醫療理賠金，或年金險累積期間身故返還之保價金，均非屬死亡保險給付，依法計入遺產。</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Slide 3: 所得稅篇 (最低稅負制) -->
-        <div class="card">
-            <div class="law-tag tag-income">📊 所得稅法 & 基本稅額條例 (最低稅負制)</div>
-            <h2 class="text-3xl font-bold text-slate-800 mb-2">稅務第二關：受益人的所得申報</h2>
-            <p class="mb-4 text-slate-600">針對受益人（活著領錢的人）領取大額免稅資金後的總結算。</p>
-            
+        <!-- Slide 3: 最低稅負制篇 -->
+        <section class="card card-income">
+            <div class="law-tag tag-income">📊 所得基本稅額條例（最低稅負制）</div>
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">三、最低稅負制篇：稅務第二關的所得申報</h2>
+            <p class="mb-4 text-slate-600">針對受益人（活著領錢的人）於保單免計入遺產後，檢視其個人基本所得稅負。</p>
+
             <div class="grid-container">
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <div class="box-title text-blue-800">📌 核心法源與啟動條件</div>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>啟動門檻：</strong>《所得基本稅額條例》第 12 條，針對「要保人與被保險人不同」且為 95 年後投保的人壽及年金險死亡給付。</li>
-                        <li><strong>雙重免稅防線：</strong>第 12 條的「死亡給付 3,740 萬免稅額」＋ 第 13 條的「綜合基本所得 750 萬扣除額」。</li>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="box-title text-amber-900">📌 法源與啟動條件</div>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>適用要件（第 12 條第 1 項第 2 款）：</strong>民國 95 年 1 月 1 日以後訂立，且<strong>「受益人與要保人非屬同一人」</strong>之人壽保險及年金保險給付。</li>
+                        <li><strong>死亡給付免計門檻：</strong>每一申報戶全年死亡給付合計在 <strong>3,740 萬元</strong>（113 年度起標準）以下者，免予計入；超過部分計入個人基本所得額。<span class="text-slate-600 text-base block mt-1">（註：非死亡給付如滿期金、生存年金等，則無此門檻，全額計入。）</span></li>
+                        <li><strong>基本所得扣除額（第 13 條）：</strong>個人基本所得額（含綜合所得淨額、海外所得、特定保險給付等）加總後，扣除 <strong>750 萬元</strong>（113 年度起標準），乘以 20% 計算基本稅額，與一般所得稅額取高者繳納。</li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
                     <div class="box-title text-amber-800">💡 實務計算與規劃鐵律</div>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>先後順序：</strong>保單必須先「成功免計入遺產稅」，才會進入這關。若已經被實質課稅繳了遺產稅，就不會再被課最低稅負。</li>
-                        <li><strong>真實極限：</strong>單一申報戶若無其他海外所得，最高可享受 4,490 萬 (3740+750) 的免稅空間。</li>
-                        <li><strong>規劃戰術：</strong>免稅額是「按申報戶」計算，分散給成年、獨立報稅的子女是節稅關鍵。</li>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>先遺產、後所得：</strong>保單須先通過遺產稅關卡（免計入遺產），才會進入最低稅負制檢視；若已依實質課稅併入遺產課稅，則不重複課徵最低稅負。</li>
+                        <li><strong>免稅空間上限前提：</strong>僅在該申報戶當年度<strong>「綜合所得淨額為 0」且「無其他應計入項目」</strong>的前提下，單戶才有最高 4,490 萬（3,740 萬＋750 萬）的免稅空間。</li>
+                        <li><strong>分散申報戶戰術：</strong>3,740 萬門檻採<strong>「按申報戶」</strong>計算，妥善指定已成年且獨立申報所得稅之受益人，為合法放大免稅額度的關鍵。</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Summary Box -->
+        <section class="card card-summary bg-slate-900 text-white" style="background-color: #0f172a;">
+            <h2 class="text-2xl font-bold text-amber-300 mb-4">🎯 實務規劃核心檢核表</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base">
+                <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                    <div class="font-bold text-cyan-300 mb-1">1. 民事防線</div>
+                    <p class="text-slate-200">明確指定受益人，善用《保險法》第 112 條將身故保險金與遺產分割、特留分有效區隔。</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                    <div class="font-bold text-rose-300 mb-1">2. 遺產稅防線</div>
+                    <p class="text-slate-200">提早規劃避開實質課稅查核特徵，並審慎檢視「要／被保險人」架構與生前理賠債權。</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                    <div class="font-bold text-amber-300 mb-1">3. 所得稅防線</div>
+                    <p class="text-slate-200">留意「要保人 ≠ 受益人」之最低稅負規定，善用成年獨立申報戶配置 3,740 萬門檻。</p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
